@@ -8,3 +8,4 @@ nltk~=3.9.1
 pillow~=11.2.1
 scikit-learn~=1.6.1
 ipython~=9.1.0
+pycocoevalcap~=1.2.0
