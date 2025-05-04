@@ -16,7 +16,6 @@ This project reproduces and extends the work of Boag et al. (2020) in establishi
 - [Extended Experiments](#extended-experiments)
 - [Methodology](#methodology)
 - [Results](#results)
-- [Project Structure](#project-structure)
 - [Docker Setup for CheXpert Labeler](#docker-setup-for-chexpert-labeler)
 
 ## Dataset
@@ -147,25 +146,6 @@ Key Finding: Performance generally increases with more neighbors up to 100, then
 | 3-gram | 0.5991 | 0.1769 | 0.1626 | 0.2841 |
 | KNN | 0.6162 | 0.2129 | 0.2086 | 0.3541 |
 
-## Project Structure
-
-├── 01_preprocessing.ipynb          # Dataset preprocessing and filtering
-├── 02_reference.ipynb             # Extract ground truth reports
-├── 03_random.ipynb                # Random baseline model
-├── 04_extract_densenet_features.ipynb  # Feature extraction
-├── 05_knn.ipynb                   # K-Nearest Neighbor model
-├── 06_ngram.ipynb                 # N-gram language models
-├── 07_CNN-RNN.ipynb              # CNN-RNN neural network
-├── 08_CNN-RNN+Beam.ipynb         # CNN-RNN with beam search
-├── 09_nlg_evaluation.ipynb       # NLG metrics evaluation
-├── 10_chexpert_evaluation.ipynb  # Clinical accuracy evaluation
-├── modules/                       # Utility functions
-│   ├── report_parser.py          # Extract report sections
-│   └── ...
-├── data/                         # Processed datasets
-├── features/                     # Extracted image features
-├── models/                       # Trained models
-└── output/                       # Generated reports and results
 
 ## Setup and Usage
 
